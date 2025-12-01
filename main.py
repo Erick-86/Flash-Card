@@ -13,4 +13,15 @@ lang_text = canvas.create_text(400, 150, text=f"French", fill="black", justify="
 lang_word_text = canvas.create_text(400, 250, text=f"Word", fill="black", justify="center", font=("Arial", 30, "bold"))
 canvas.grid(row=1, column=1)
 
+# Buttons
+# Cancel Btn
+cancel_btn_img = PhotoImage(file="images/wrong.png")
+cancel_btn = Button(image=cancel_btn_img)
+cancel_btn.grid(row=2, column=1)
+
+# Correct Btn
+correct_btn_img = PhotoImage(file="images/right.png")
+correct_btn = Button(image=correct_btn_img)
+correct_btn.grid(row=2, column=2)
+
 window.mainloop()
